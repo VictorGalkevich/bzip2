@@ -46,7 +46,7 @@ public class ZipReader {
         Map<Character, Integer> frequencies = new TreeMap<>();
         StringBuilder bits = new StringBuilder();
             try {
-                DataInputStream os = new DataInputStream(new FileInputStream(new File(path)));
+                DataInputStream os = new DataInputStream(new FileInputStream(path));
                 int frequencyTableSize = os.readInt();
                 for (int i = 0; i < frequencyTableSize; i++) {
                     frequencies.put(os.readChar(), os.readInt());
