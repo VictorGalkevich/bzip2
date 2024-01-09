@@ -98,7 +98,7 @@ public class Compressor {
 
         @Override
         public int compareTo(CodeTreeNode o) {
-            return -o.weight + weight;
+            return -(o.weight - weight);
         }
 
         // извлечение кода для символа

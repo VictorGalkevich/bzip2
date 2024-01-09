@@ -36,7 +36,6 @@ public class ZipReader {
             os.writeUTF(alphabet);
             os.flush();
             os.close();
-
         } catch (IOException e) {
             e.printStackTrace();
         }

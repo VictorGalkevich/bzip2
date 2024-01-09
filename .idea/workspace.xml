@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d06a36a-01e2-4f12-93ab-c3537f013885" name="Changes" comment="">
+    <list default="true" id="9d06a36a-01e2-4f12-93ab-c3537f013885" name="Changes" comment="bugs fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bzip2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bzip2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AlphabetFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AlphabetFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Archiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Archiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Compressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Compressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Simplifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Simplifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transformer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ZipReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ZipReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/CompressorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CompressorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimplifierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimplifierTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TransformerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TransformerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,12 +131,34 @@
       <option name="presentableId" value="Default" />
       <updated>1704735154831</updated>
       <workItem from="1704735155869" duration="383000" />
-      <workItem from="1704735556614" duration="25460000" />
+      <workItem from="1704735556614" duration="28373000" />
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <option name="closed" value="true" />
+      <created>1704834462737</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704834462737</updated>
+    </task>
+    <task id="LOCAL-00002" summary="bugs fixed">
+      <option name="closed" value="true" />
+      <created>1704837456311</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704837456311</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <MESSAGE value="bugs fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugs fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
