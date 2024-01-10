@@ -4,14 +4,17 @@ public class LengthHandler {
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < n; i++) {
 
-            // Count occurrences of current character
-            int count = 1;
-            while (i < n - 1
-                   && str.charAt(i) == str.charAt(i + 1)) {
-                count++;
-                i++;
+            if (str.charAt(i) == '0') {
+                int count = 1;
+                while (i < n - 1
+                       && str.charAt(i) == str.charAt(i + 1)) {
+                    count++;
+                    i++;
+                }
+                builder.append('0').append(count);
+            } else {
+                builder.append(str.charAt(i));
             }
-            builder.append(str.charAt(i)).append(count == 1 ? "" : count);
         }
         return builder.toString();
     }
@@ -20,11 +23,11 @@ public class LengthHandler {
         int n = str.length();
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            if (i == n - 1 || !Character.isDigit(str.charAt(i + 1))) {
-                builder.append(str.charAt(i));
-            } else {
-                builder.append(String.valueOf(str.charAt(i)).repeat(Integer.parseInt(str.charAt(i + 1) + "")));
+            if (str.charAt(i) == '0') {
+                builder.append(String.valueOf('0').repeat(Integer.parseInt(str.charAt(i + 1) + "")));
                 i++;
+            } else {
+                builder.append(str.charAt(i));
             }
         }
         return builder.toString();

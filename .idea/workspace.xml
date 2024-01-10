@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d06a36a-01e2-4f12-93ab-c3537f013885" name="Changes" comment="added Rle encoding">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Archiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Archiver.java" afterDir="false" />
+    <list default="true" id="9d06a36a-01e2-4f12-93ab-c3537f013885" name="Changes" comment="bugs fixed">
       <change beforePath="$PROJECT_DIR$/src/LengthHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LengthHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/LengthHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/LengthHandlerTest.java" afterDir="false" />
     </list>
@@ -80,6 +78,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LengthHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bzip2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LengthHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LengthHandlerTest.testRleBackwards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bzip2" />
       <option name="PACKAGE_NAME" value="" />
@@ -110,23 +117,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransformerTest.testBwtForward" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bzip2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TransformerTest" />
-      <option name="METHOD_NAME" value="testBwtForward" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.LengthHandlerTest" />
         <item itemvalue="JUnit.LengthHandlerTest.testRleBackwards" />
         <item itemvalue="JUnit.LengthHandlerTest.testRleForward" />
         <item itemvalue="JUnit.TransformerTest.testBwtBackwards" />
-        <item itemvalue="JUnit.TransformerTest.testBwtForward" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704735154831</updated>
       <workItem from="1704735155869" duration="383000" />
-      <workItem from="1704735556614" duration="30708000" />
+      <workItem from="1704735556614" duration="31114000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -173,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704876771848</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="bugs fixed">
+      <option name="closed" value="true" />
+      <created>1704877560153</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704877560153</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,9 +186,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
-    <MESSAGE value="bugs fixed" />
     <MESSAGE value="added Rle encoding" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Rle encoding" />
+    <MESSAGE value="bugs fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugs fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -199,7 +204,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Archiver.java</url>
-          <line>24</line>
+          <line>22</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
