@@ -11,7 +11,8 @@ public class Archiver {
         String bwtEncoded = Transformer.doBwtForward(read);
         String alphabet = AlphabetFinder.findAlphabet(bwtEncoded);
         String mtfEncoded = Simplifier.doMtfForward(bwtEncoded, alphabet);
-        Pair<String, Map<Character, Integer>> pair = Compressor.doHuffForward(mtfEncoded);
+        String rleEncoded = LengthHandler.doRleForward(mtfEncoded);
+        Pair<String, Map<Character, Integer>> pair = Compressor.doHuffForward(rleEncoded);
         reader.writeEncoded(to, new Pair<>(alphabet, pair));
     }
 
@@ -22,7 +23,8 @@ public class Archiver {
         String content = pair.getV2().getV1();
         String alphabet = pair.getV2().getV2();
         String huffDecoded = Compressor.doHuffBackwards(frequencies, content);
-        String mtfDecoded = Simplifier.doMtfBackwards(huffDecoded, alphabet);
+        String rleDecoded = LengthHandler.doRleBackwards(huffDecoded);
+        String mtfDecoded = Simplifier.doMtfBackwards(rleDecoded, alphabet);
         String bwtDecoded = Transformer.doBwtBackwards(mtfDecoded);
         reader.write(to, bwtDecoded);
     }
