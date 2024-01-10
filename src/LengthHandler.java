@@ -11,7 +11,7 @@ public class LengthHandler {
                 count++;
                 i++;
             }
-            builder.append(str.charAt(i)).append(count);
+            builder.append(str.charAt(i)).append(count == 1 ? "" : count);
         }
         return builder.toString();
     }
@@ -20,8 +20,12 @@ public class LengthHandler {
         int n = str.length();
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            builder.append(String.valueOf(str.charAt(i)).repeat(Integer.parseInt(str.charAt(i + 1) + "")));
-            i++;
+            if (i == n - 1 || !Character.isDigit(str.charAt(i + 1))) {
+                builder.append(str.charAt(i));
+            } else {
+                builder.append(String.valueOf(str.charAt(i)).repeat(Integer.parseInt(str.charAt(i + 1) + "")));
+                i++;
+            }
         }
         return builder.toString();
     }

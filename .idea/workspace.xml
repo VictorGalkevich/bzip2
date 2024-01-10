@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d06a36a-01e2-4f12-93ab-c3537f013885" name="Changes" comment="bugs fixed">
-      <change afterPath="$PROJECT_DIR$/src/LengthHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/LengthHandlerTest.java" afterDir="false" />
+    <list default="true" id="9d06a36a-01e2-4f12-93ab-c3537f013885" name="Changes" comment="added Rle encoding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Archiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Archiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LengthHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LengthHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/LengthHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/LengthHandlerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704735154831</updated>
       <workItem from="1704735155869" duration="383000" />
-      <workItem from="1704735556614" duration="29926000" />
+      <workItem from="1704735556614" duration="30708000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -167,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704837817576</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added Rle encoding">
+      <option name="closed" value="true" />
+      <created>1704876771848</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704876771848</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +182,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <MESSAGE value="bugs fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="bugs fixed" />
+    <MESSAGE value="added Rle encoding" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Rle encoding" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -191,9 +198,9 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Simplifier.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/Archiver.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

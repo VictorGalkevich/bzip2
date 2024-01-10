@@ -1,7 +1,5 @@
-import java.io.File;
 import java.io.IOException;
 import java.util.Map;
-import java.util.TreeMap;
 
 
 public class Archiver {
@@ -11,8 +9,7 @@ public class Archiver {
         String bwtEncoded = Transformer.doBwtForward(read);
         String alphabet = AlphabetFinder.findAlphabet(bwtEncoded);
         String mtfEncoded = Simplifier.doMtfForward(bwtEncoded, alphabet);
-        String rleEncoded = LengthHandler.doRleForward(mtfEncoded);
-        Pair<String, Map<Character, Integer>> pair = Compressor.doHuffForward(rleEncoded);
+        Pair<String, Map<Character, Integer>> pair = Compressor.doHuffForward(mtfEncoded);
         reader.writeEncoded(to, new Pair<>(alphabet, pair));
     }
 
@@ -23,8 +20,7 @@ public class Archiver {
         String content = pair.getV2().getV1();
         String alphabet = pair.getV2().getV2();
         String huffDecoded = Compressor.doHuffBackwards(frequencies, content);
-        String rleDecoded = LengthHandler.doRleBackwards(huffDecoded);
-        String mtfDecoded = Simplifier.doMtfBackwards(rleDecoded, alphabet);
+        String mtfDecoded = Simplifier.doMtfBackwards(huffDecoded, alphabet);
         String bwtDecoded = Transformer.doBwtBackwards(mtfDecoded);
         reader.write(to, bwtDecoded);
     }
